@@ -1,6 +1,6 @@
 const { execFile } = require('child_process');
 
-execFile('python', ['script.py'], (error, stdout, stderr) => {
+execFile('python', ['./data/script.py'], (error, stdout, stderr) => {
   if (error) {
     console.error(`execFile error: ${error}`);
     return;
